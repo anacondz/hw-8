@@ -46,7 +46,11 @@
         fill: #FFFFFF;
     }
 }
-
+.social__container {
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+}
 .social__caption {
     font-weight: 700;
     font-size: 14px;
@@ -61,6 +65,9 @@
     display: flex;
     justify-content: flex-start;
     padding: 0;
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
 }
 
 .social__link {
