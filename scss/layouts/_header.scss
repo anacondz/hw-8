@@ -8,6 +8,9 @@
 }
 
 .header__list {
+    @media screen and (min-width: 480px) {
+            display: none;
+        }
     margin-left: auto;
     display: flex;
     padding-left: 0;
@@ -58,6 +61,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
 
     &:focus,
     &:hover {
