@@ -1,0 +1,14 @@
+.filters {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    color: #212121;
+}
+
+.fl-item {
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,164 @@
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #000000;
+}
+
+.form-modal {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.form-label {
+    &.textarea {
+        margin-bottom: 20px;
+    }
+
+    &.checkbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        color: #000000;
+    }
+}
+
+.textinp {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 12px 12px 12px 42px;
+    cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title-label {
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 5px;
+    color: #757575;
+}
+
+.input2 {
+    display: block;
+    position: relative;
+}
+
+.inp-svg {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    fill: currentColor;
+    pointer-events: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea1 {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    resize: none;
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+        outline: 0;
+    }
+}
+
+.form-label-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.inp-svg1 {
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
+    fill: #FFFFFF;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
+
+    &:checked+.inp-svg1 {
+        fill: #FFFFFF;
+        background-color: #2196f3;
+        border-color: #2196f3;
+    }
+
+    &:hover+.inp-svg1,
+    &:focus+.inp-svg1 {
+        border-color: #2196f3;
+    }
+}
+
+.text-terms {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.www {
+    color: #2196f3;
+    text-decoration: underline;
+}
+
+.input2 {
+
+    &:hover,
+    &:focus {
+        color: #2196f3;
+        outline-color: #2196f3;
+        border: none;
+    }
+}
+
+.textinp {
+
+    &:hover,
+    &:focus {
+        border-color: #2196f3;
+    }
+
+    &:focus-visible {
+        outline: 0;
+    }
+}
