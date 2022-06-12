@@ -145,6 +145,10 @@ ul {
   border-radius: 4px;
 }
 
+.menu__button {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .menu__button {
     display: -webkit-inline-box;
@@ -1383,6 +1387,10 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.mobile__menu--container {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
