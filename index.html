@@ -19,6 +19,42 @@
 <header class="header">
   <div class="container header__container">
     <a class="logo" href="index.html" lang="en"><span class="accent--logo">Web</span>Studio</a>
+    <button class="menu__button" data-menu-button type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="mobile-menu__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+        <use class="mobile-menu__icon-close" href="./images/symbol-defs.svg#icon-close_1"></use>
+      </svg>
+    </button>
+     <div class="mobile__menu--container" data-menu id="mobile-menu" >
+    <ul class="mobile-menu__nav">
+      <li class="mobile-menu__nav--item">
+      <a class="mobile-menu__nav--link link nav__link--active" href="./index.html">Студия</a></li>
+      <li class="mobile-menu__nav--item">
+        <a class="mobile-menu__nav--link link" href="./portfolio.html">Портфолио</a></li>
+      <li class="mobile-menu__nav--item">
+        <a class="mobile-menu__nav--link link" href="">Контакты</a></li>
+    </ul>
+    <ul class="mobile-menu__contacts">
+      <li class="mobile-menu__contacts--item">
+        <a class="mobile-menu__contacts--tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <li class="mobile-menu__contacts--item">
+        <a class="mobile-menu__contacts--email link" href="malito:info@devstudio.com">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-menu__socials">
+      <li class="mobile-menu__socials--item">
+          <a class="mobile-menu__socials--link link" href="">Instagram</a>
+      </li>
+      <li class="mobile-menu__socials--item">
+          <a class="mobile-menu__socials--link link" href="">Twitter</a>
+      </li>
+      <li class="mobile-menu__socials--item">
+          <a class="mobile-menu__socials--link link" href="">Facebook</a>
+      </li>
+      <li class="mobile-menu__socials--item">
+          <a class="mobile-menu__socials--link link" href="">Linkedin</a>
+      </li>
+    </ul>
+  </div>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link navigation__link--current" href="index.html">Студия</a></li>

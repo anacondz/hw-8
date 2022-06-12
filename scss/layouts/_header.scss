@@ -1,7 +1,7 @@
 .header__container {
     display: flex;
     align-items: center;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     width: 480px;
     }
 }
@@ -11,7 +11,7 @@
 }
 
 .header__list {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
             display: none;
         }
     margin-left: auto;
@@ -65,7 +65,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 
