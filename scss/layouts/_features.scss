@@ -2,10 +2,19 @@
     display: flex;
     margin: 0;
     padding: 0;
-    @media screen and (max-width: 767.98px) {
+    @media screen and (min-width: 480px) {
         display: block;
-}
-}
+    }
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    }
 .features__section {
     padding-top: 94px;
     padding-bottom: 0;
@@ -13,20 +22,37 @@
         padding-top: 60px;
             padding-bottom: 60px;
     }
+         @media screen and (max-width: 1199px) {
+            padding-top: 60px;
+                padding-bottom: 60px;
+         }
 }
 
 .feature__item {
     width: 270px;
+    margin: 0;
     margin-right: 30px;
-    @media screen and (max-width: 767.98px) {
-   margin-bottom: 30px;
-    width: 100%;
-    }
     &:last-child {
-        margin-right: 0;
-        @media screen and (max-width: 767.98px) {
+            margin-right: 0;
+        }
+    @media screen and (max-width: 767px) {
+   margin-bottom: 30px;
+    width: 450px;
+    }
+     @media screen and (max-width: 767px) {
                 margin-bottom: 0;
-
+        }
+ @media screen and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (max-width: 1199px) {
+    &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 30px;
+    }
+}
+ @media screen and (max-width: 1199px) {
+    &:nth-child(2n) {
+        margin-right: 0;
     }
 }
     &::before {
