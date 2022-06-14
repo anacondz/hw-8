@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +19,51 @@
 <header class="header">
     <div class="container header__container">
         <a class="logo" href="index.html" lang="en"><span class="accent--logo">Web</span>Studio</a>
+        <button class="menu__button" data-menu-button type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="mobile-menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="mobile-menu__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                <use class="mobile-menu__icon-close" href="./images/symbol-defs.svg#icon-close_1"></use>
+            </svg>
+        </button>
+        <div class="mobile__menu--container" data-menu id="mobile-menu">
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav--item">
+                    <a class="mobile-menu__nav--link link " href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__nav--item">
+                    <a class="mobile-menu__nav--link link nav__link--current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__nav--item">
+                    <a class="mobile-menu__nav--link link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__contacts">
+                <li class="mobile-menu__contacts--item">
+                    <a class="mobile-menu__contacts--tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu__contacts--item">
+                    <a class="mobile-menu__contacts--email link" href="malito:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials--item">
+                    <a class="mobile-menu__socials--link link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials--item">
+                    <a class="mobile-menu__socials--link link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials--item">
+                    <a class="mobile-menu__socials--link link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials--item">
+                    <a class="mobile-menu__socials--link link" href="">Linkedin</a>
+                </li>
+            </ul>
+        </div>
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="index.html">Студия</a></li>
+                <li class="navigation__item"><a class="navigation__link "
+                        href="index.html">Студия</a></li>
                 <li class="navigation__item"><a class="navigation__link navigation__link--current" href="portfolio.html">Портфолио</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="index.html">Контакты</a></li>
             </ul>
@@ -44,7 +88,7 @@
     </div>
 </header>
     <main> 
-        <section class="section">
+        <section class="section main__section">
              <div class="container filters-container">
             <ul class="filters">
                 <li class="fl-item"><button class="button primary" type="button">Все</button></li>
@@ -253,12 +297,15 @@
             <a class="logo footer__logo" href="index.html" lang="en"><span class="logo--white">Web</span>Studio</a>
             <address class="address">
                 <ul class="address__list">
-                    <li class="address__item"><a class="address__link address__link--white" href="https://cutt.ly/DGddfy9" target="_blank"
-                            rel="noopener noreferrer">г. Киев, пр-т Леси
+                    <li class="address__item"><a class="address__link address__link--white"
+                            href="https://cutt.ly/DGddfy9" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси
                             Украинки,
                             26</a></li>
-                    <li class="address__item"><a class="address__link address__link--grey" href="mailto:info@devstudio.com">info@example.com</a></li>
-                    <li class="address__item"><a class="address__link address__link--grey" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="address__item"><a class="address__link address__link--grey"
+                            href="mailto:info@devstudio.com">info@example.com</a></li>
+                    <li class="address__item"><a class="address__link address__link--grey" href="tel:+380961111111">+38
+                            096 111 11
+                            11</a></li>
                 </ul>
             </address>
         </div>
@@ -266,28 +313,32 @@
             <h3 class="social__caption">Присоединяйтесь</h3>
             <ul class="social">
                 <li class="social__item">
-                    <a class="social__link" href="/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу">
+                    <a class="social__link" href="/" target="_blank" rel="noopener noreferrer"
+                        title="Перейти на страницу">
                         <svg class="social__icon" width="20" height="20">
                             <use href="./images/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link" href="/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу">
+                    <a class="social__link" href="/" target="_blank" rel="noopener noreferrer"
+                        title="Перейти на страницу">
                         <svg class="social__icon" width="20" height="20">
                             <use href="./images/symbol-defs.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link" href="/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу">
+                    <a class="social__link" href="/" target="_blank" rel="noopener noreferrer"
+                        title="Перейти на страницу">
                         <svg class="social__icon" width="20" height="20">
                             <use href="./images/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link" href="/" target="_blank" rel="noopener noreferrer" title="Перейти на страницу">
+                    <a class="social__link" href="/" target="_blank" rel="noopener noreferrer"
+                        title="Перейти на страницу">
                         <svg class="social__icon" width="20" height="20">
                             <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                         </svg>
@@ -298,15 +349,15 @@
         <div class="subscribe">
             <h3 class="subscribe__caption">Подпишитесь на рассылку</h3>
             <form class="subscribe__form">
-            <label>
-                <input class="subscribe__input" type="email" name="email" placeholder="Email"/>
-            </label>
-            <button class="button button--icon" type="submit">Подписаться
-                <svg class="subscribe__icon" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-send">
-                    </use>
-                </svg>
-            </button>
+                <label>
+                    <input class="subscribe__input" type="email" name="email" placeholder="Email" />
+                </label>
+                <button class="button button--icon" type="submit">Подписаться
+                    <svg class="subscribe__icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-send">
+                        </use>
+                    </svg>
+                </button>
             </form>
         </div>
     </div>

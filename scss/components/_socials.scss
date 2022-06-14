@@ -50,10 +50,13 @@
     @media screen and (max-width: 767px) {
         margin-top: 60px;
     }
-        @media screen and (max-width: 1199px) {
+                @media screen and (min-width: 767.98px) and (max-width: 1199px) {
             margin: auto;
             margin-top: 0;
         }
+                 @media screen and (min-width: 1200px) {
+margin-left: 70px;
+                 }
 }
 .social__caption {
     font-weight: 700;

@@ -7,3 +7,13 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.main__section {
+    @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 60px;
+        padding-top: 60px;
+}
+}
