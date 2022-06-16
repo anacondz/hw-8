@@ -1413,11 +1413,13 @@ ul {
 
 .tm:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
   .tm {
     margin-bottom: 30px;
+    margin-right: 0;
   }
 }
 
