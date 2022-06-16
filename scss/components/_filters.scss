@@ -1,6 +1,8 @@
 .filters {
     display: flex;
     margin-bottom: 50px;
+   justify-content: center;
+   padding: 0;
    
     color: #212121;
     @media screen and (max-width: 767px) {
@@ -8,6 +10,7 @@
         flex-wrap: wrap;
         margin-bottom: 40px;
         padding: 0;
+        justify-content: start;
     }
          @media screen and (min-width: 1199px) {
             justify-content: center; 

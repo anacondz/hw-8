@@ -16,7 +16,7 @@
                                 @media screen and (min-width: 767.98px) and (max-width: 1199px) {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: space-between;
+                    justify-content: space-around;
                     text-align: center;
                     align-items: baseline;
                  }
@@ -31,7 +31,7 @@
            margin: 0;
         }
                                  @media screen and (min-width: 767.98px) and (max-width: 1199px) {
-                    margin: auto;
+                    
                  }
 }
 

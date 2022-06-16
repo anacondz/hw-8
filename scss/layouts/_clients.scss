@@ -37,6 +37,7 @@
         }
     
         @media screen and (min-width: 480px) and (max-width: 767px) {
+            width: 210px;
             &:nth-child(2n + 1) {
                 margin-right: 30px;
             }
@@ -47,8 +48,8 @@
         }
     
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-            margin: 15px;
-    
+           margin: 15px;
+            width: 226px;
         flex-basis: calc((100% - 90px) / 3);
         }
     
@@ -98,8 +99,9 @@
             display: flex;
             flex-wrap: wrap;
         }
-                 @media screen and (max-width: 1199px) {
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
                     display: flex;
                     flex-wrap: wrap;
+                    margin: -15px;
                  }
 }
